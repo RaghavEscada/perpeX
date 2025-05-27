@@ -125,30 +125,7 @@ export default function Navbar() {
           >
             
 
-            {/* Contact button */}
-            <Link href="/contact">
-              <motion.button
-                className="relative group px-6 py-2 bg-black rounded-full backdrop-blur-sm overflow-hidden"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                {/* Button background animation */}
-                <motion.div
-                  className="absolute inset-0 bg-black group-hover:opacity-20"
-                  transition={{ duration: 0.3 }}
-                />
-
-                <span className="relative z-10 text-white text-sm font-medium">
-                  Contact
-                </span>
-
-                {/* Shine effect */}
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full"
-                  transition={{ duration: 0.6 }}
-                />
-              </motion.button>
-            </Link>
+           
 
 
 

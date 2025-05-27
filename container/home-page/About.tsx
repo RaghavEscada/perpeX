@@ -837,9 +837,7 @@ export default function PerpeXLanding() {
 
       {/* Footer */}
       <footer className="py-12 bg-white border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <p className="text-slate-600 font-light">© 2024 PerpeX. All rights reserved.</p>
-        </div>
+       
       </footer>
     </div>
   );
