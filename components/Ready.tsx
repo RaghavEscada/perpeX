@@ -8,7 +8,7 @@ import { useScroll, useTransform, motion } from "framer-motion";
 
 export default function Ready() {
 	const container = useRef(null);
-	const phrase = ["LET'S", "NUKE YOUR", "PROJECT"];
+	const phrase = ["LET'S", "get to", "Business"];
 
 	const { scrollYProgress } = useScroll({
 		target: container, 
@@ -22,7 +22,7 @@ export default function Ready() {
 			ref={container}>
 			<div className="w-full h-full flex justify-center gap-[50px] items-center flex-col">
 				<div className="flex flex-col gap-[10px]">
-					<h1 className="text-[15px] font-NeueMontreal leading-[230px] lg:text-[170px] lg:leading-[170px] md:text-[180px] md:leading-[140px] sm:text-[120px] sm:leading-[90px] xm:text-[80px] xm:leading-[60px] tracking-[-2.5px] text-center font-bold text-white uppercase pointer-events-none">
+					<h1 className="text-[15px] font-NeueMontreal leading-[230px] lg:text-[170px] lg:leading-[170px] md:text-[180px] md:leading-[140px] sm:text-[120px] sm:leading-[90px] xm:text-[80px] xm:leading-[60px] tracking-[-2.5px] text-center font-bold text-blue-700 uppercase pointer-events-none">
 						<TextMask>{phrase}</TextMask>
 					</h1>
 				</div>
@@ -35,9 +35,9 @@ export default function Ready() {
 							href="/contact">
 							<Rounded
 								className="py-[6px]"
-								backgroundColor="#212121">
-								<p className="z-10 px-[10px] ml-[15px] py-[6px] font-['Gilda_Display'] group-hover:text-white text-white">
-								nukemarketing7@gmail.com
+								backgroundColor="#fffff">
+								<p className="z-10 px-[10px] ml-[15px] py-[6px] font-['Gilda_Display'] group-hover:text-white text-blue-600">
+								info@perpex.in
 								</p>
 								<div className="bg-white group-hover:bg-white p-[10px] rounded-full scale-[0.3] mr-[10px] group-hover:scale-[0.9] transition-all z-10 transform duration-[0.3s] ease-[.215,.61,.355,1]">
 									<ArrowUpRight
