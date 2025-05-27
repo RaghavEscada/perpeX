@@ -1,5 +1,6 @@
 export { default as Ready } from "./Ready";
 export { default as Rounded } from "./Rounded";
+export { default as EntryAnimation } from "./entryanimation";
 
 export { default as Navbar } from "./Navbar";
 export { default as Footer } from "./Footer";
