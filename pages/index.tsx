@@ -2,6 +2,7 @@
 import { Curve, Ready } from "@/components";
 import { About, Clients, Hero, Projects, VideoHome, X } from "@/container";
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -159,10 +160,12 @@ export default function Home() {
           
           {/* Logo */}
           <div className="main-logo mb-20">
-            <img 
+            <Image 
               src="/loader.webp" 
               alt="Perpex" 
-              className="w-20 h-20 object-contain"
+              width={80}
+              height={80}
+              className="object-contain"
               style={{
                 filter: 'drop-shadow(0 0 40px rgba(255,255,255,0.1))'
               }}
@@ -172,9 +175,9 @@ export default function Home() {
           {/* Sophisticated Quote */}
           <div className="sophisticated-quote text-center mb-24 max-w-2xl">
             <div className="text-lg leading-relaxed font-light tracking-wide opacity-90 mb-6">
-              "Excellence is never an accident. It is always the result of high intention,
+              &ldquo;Excellence is never an accident. It is always the result of high intention,
               <br />
-              sincere effort, and intelligent execution."
+              sincere effort, and intelligent execution.&rdquo;
             </div>
             <div className="text-xs tracking-[0.25em] opacity-40 font-medium">
               ARISTOTLE
