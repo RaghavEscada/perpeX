@@ -433,21 +433,21 @@ const Portfolio: React.FC = () => {
           <div
             key={index}
             ref={el => {if (el) cardsRef.current[index] = el}}
-            className="absolute top-[150%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/5 h-3/5 flex justify-center items-center bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 border-2 border-blue-400/30 rounded-2xl overflow-hidden shadow-2xl"
+            className="absolute top-[150%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-4xl h-[80vh] flex flex-col justify-center items-center bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 border-2 border-blue-400/30 rounded-2xl overflow-hidden shadow-2xl p-8"
             style={{willChange: 'transform'}}
           >
-            <div className="absolute top-6 left-1/2 transform -translate-x-1/2 px-4 py-2 rounded-lg bg-white/10 backdrop-blur-sm">
+            <div className="absolute top-6 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-lg bg-white/10 backdrop-blur-sm">
               <p className="text-lg font-bold text-white flex items-center gap-2">
                 <span>{card.icon}</span>
                 Service #{card.phase}
               </p>
             </div>
-            <div className="text-center px-8 max-w-4xl">
-              <p className="text-2xl text-blue-200 mb-6 font-semibold">{card.service}</p>
-              <h1 className="text-6xl md:text-5xl font-bold leading-tight text-white mb-6">
+            <div className="text-center w-full max-w-3xl mx-auto mt-16">
+              <p className="text-2xl text-blue-200 mb-8 font-semibold">{card.service}</p>
+              <h1 className="text-7xl md:text-6xl font-bold leading-tight text-white mb-8">
                 {card.title} <span className="text-blue-300 font-medium">{card.subtitle}</span>
               </h1>
-              <p className="text-base text-gray-200 leading-relaxed max-w-2xl mx-auto font-medium">
+              <p className="text-lg text-gray-200 leading-relaxed font-medium">
                 {card.description}
               </p>
             </div>
