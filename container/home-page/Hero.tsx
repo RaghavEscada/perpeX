@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, MotionValue, useScroll, useTransform } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import { WavyBackgroundDemo } from "@/data/data";
+
 
 // Mouse Position Hook
 interface MousePosition {
@@ -332,7 +332,7 @@ const Hero = () => {
 
                   {/* Enhanced CTAs */}
                   <div className="flex flex-col sm:flex-row gap-6 pt-8">
-                    <button className="group relative px-12 py-5 bg-blue-600 text-white font-medium text-lg tracking-wide overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:bg-blue-700 rounded-lg">
+                    <button className="group relative px-5 py-5  text-white font-medium text-lg tracking-wide overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:bg-blue-700 rounded-lg">
                       <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                       <a href="/contact" target="_blank" rel="noopener noreferrer">
                         <button className="bg-slate-300 text-black px-12 py-4 rounded-lg font-medium hover:bg-slate-200 transition-colors duration-300 text-lg">
@@ -602,7 +602,7 @@ const LogoCloud = () => {
             ))}
         </div>
 
-        {/* Second row - moving right */}
+    
         <div
           className="group relative mt-2 flex gap-6 overflow-hidden p-2"
           style={{

@@ -12,7 +12,6 @@ export default function Projects() {
 				className="padding-x padding-y pb-[50px] border-b border-[#21212155]"
 			/>
 
-			{/* Projects List */}
 			
 
 
@@ -33,5 +32,6 @@ export default function Projects() {
 		
 			
 		</section>
+		
 	);
 }
