@@ -11,39 +11,42 @@ export default function Ready() {
 	const phrase = ["LET'S", "get to", "Business"];
 
 	const { scrollYProgress } = useScroll({
-		target: container, 
+		target: container,
 		offset: ["start end", "end start"],
 	});
 	const mq = useTransform(scrollYProgress, [0, 1], [0, -700]);
 
 	return (
 		<section
-			className="w-full text-secondary relative font-NeueMontreal z-30 min-h-screen sm:h-screen xm:h-screen bg-black padding-y rounded-t-[20px] mt-[-20px]"
+			className="w-full text-secondary relative font-NeueMontreal z-30 min-h-screen bg-black px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-8 sm:py-12 md:py-16 lg:py-20 rounded-t-[20px] mt-[-20px]"
 			ref={container}>
-			<div className="w-full h-full flex justify-center gap-[50px] items-center flex-col">
-				<div className="flex flex-col gap-[10px]">
-					<h1 className="text-[15px] font-NeueMontreal leading-[230px] lg:text-[170px] lg:leading-[170px] md:text-[180px] md:leading-[140px] sm:text-[120px] sm:leading-[90px] xm:text-[80px] xm:leading-[60px] tracking-[-2.5px] text-center font-bold text-blue-700 uppercase pointer-events-none">
+			<div className="w-full h-full flex justify-center items-center flex-col gap-8 sm:gap-12 md:gap-16">
+				{/* Main Heading */}
+				<div className="flex flex-col gap-2 sm:gap-4">
+					<h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[170px] 
+						leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-tight 2xl:leading-[170px]
+						tracking-tight font-bold text-blue-700 uppercase pointer-events-none text-center">
 						<TextMask>{phrase}</TextMask>
 					</h1>
 				</div>
-				<div className="flex flex-col  items-center gap-[10px]">
-					
-					
-					<div className="flex items-center justify-between bg-transparent cursor-pointer rounded-full group border border-[#212121]">
+
+				{/* Contact Button */}
+				<div className="flex flex-col items-center gap-4">
+					<div className="flex items-center justify-between bg-transparent cursor-pointer rounded-full group border border-[#212121] hover:border-blue-600 transition-colors duration-300">
 						<Link
-							className="xl:text-[18px] xl:leading-[28px] text-[14px] leading-[24px] uppercase font-normal font-NeueMontreal"
+							className="text-sm sm:text-base lg:text-lg uppercase font-normal font-NeueMontreal"
 							href="/contact">
 							<Rounded
-								className="py-[6px]"
-								backgroundColor="#fffff">
-								<p className="z-10 px-[10px] ml-[15px] py-[6px] font-['Gilda_Display'] group-hover:text-white text-blue-600">
-								info@perpex.in
+								className="py-2 sm:py-3"
+								backgroundColor="#ffffff">
+								<p className="z-10 px-4 sm:px-6 ml-3 sm:ml-4 py-2 sm:py-3 font-['Gilda_Display'] group-hover:text-white text-blue-600 text-sm sm:text-base transition-colors duration-300">
+									info@perpex.in
 								</p>
-								<div className="bg-white group-hover:bg-white p-[10px] rounded-full scale-[0.3] mr-[10px] group-hover:scale-[0.9] transition-all z-10 transform duration-[0.3s] ease-[.215,.61,.355,1]">
+								<div className="bg-white group-hover:bg-blue-600 p-2 sm:p-3 rounded-full scale-[0.3] mr-2 sm:mr-3 group-hover:scale-[0.9] transition-all z-10 transform duration-300 ease-[.215,.61,.355,1]">
 									<ArrowUpRight
 										strokeWidth={1.5}
-										size={30}
-										className="scale-[0] group-hover:scale-[1]"
+										size={20}
+										className="scale-0 group-hover:scale-100 transition-transform duration-300 text-blue-600 group-hover:text-white sm:w-6 sm:h-6"
 									/>
 								</div>
 							</Rounded>
@@ -51,10 +54,12 @@ export default function Ready() {
 					</div>
 				</div>
 			</div>
+
+			{/* Animated Background Element */}
 			<motion.div
-				className="w-full absolute top-[50%] transform translate-y-[-50%] gap-[30px] flex items-center justify-center"
-				style={{ y : mq }}>
-				
+				className="w-full absolute top-1/2 left-0 -translate-y-1/2 gap-6 sm:gap-8 flex items-center justify-center pointer-events-none"
+				style={{ y: mq }}>
+				{/* Add your background elements here if needed */}
 			</motion.div>
 		</section>
 	);
