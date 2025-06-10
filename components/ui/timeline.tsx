@@ -60,7 +60,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-24 py-20 lg:py-40 lg:sticky lg:top-0 lg:h-screen">
           <div className="max-w-xl">
             <p className="text-sm text-white font-medium uppercase tracking-wider mb-12 lg:mb-20">
-              Our Process
+              Our Learning Flow
             </p>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-medium text-white leading-tight mb-16 lg:mb-24">

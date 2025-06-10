@@ -194,6 +194,26 @@ export function LampDemoTeam() {
   );
 }
 
+export function LampDemoAbout() {
+  return (
+    <LampContainer>
+      <motion.h1
+        initial={{ opacity: 0.5, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-[150px] font-medium tracking-tight text-white md:text-7xl"
+      >
+        About<br />
+      </motion.h1>
+      <p>scroll to explore</p>
+    </LampContainer>
+  );
+}
+
 export default function MacbookScrollDemo() {
   return (
     <div className="overflow-hidden dark:bg-[#0B0B0F] bg-white w-full">

@@ -31,7 +31,7 @@ export default function Socials() {
 	const mq = useTransform(scrollYProgress, [0, 1], [0, -700]);
 	return (
 		<section
-			className="w-full min-h-screen sm:h-screen  bg-black text-red-400  xm:h-screen text-white padding-y relative"
+			className="w-full min-h-screen sm:h-screen  bg-black   xm:h-screen text-white padding-y relative"
 			ref={container}>
 			<div className="w-full h-full flex justify-center gap-[50px] items-center flex-col">
 				<div className="flex  flex-col gap-[10px] pb-[50px]">
@@ -75,7 +75,7 @@ export default function Socials() {
 								</div>
 							</div>
 							<div className="flex w-fit h-fit gap-x-[5px] group">
-								<div className="rounded-[50px] border-[2px] border-[#21212155] group-hover:bg-white py-[3px] px-[12px] cursor-pointer">
+								<div className="rounded-[50px] border-[2px] border-[#21212155] group-hover:bg-red-600 py-[3px] px-[12px] cursor-pointer">
 								<h1 className="paragraph  font-NeueMontreal text-white font-bold">
 							Contact Number : 
   <a 
